@@ -34,23 +34,34 @@ Usuário: guest
 Senha: guest
 
 📁 Estrutura do Projeto
-bash
-Copiar
-Editar
 trabalho06/
+
 ├── gerador_mensagens/
+
 │   ├── app.py            
+
 │   ├── Dockerfile
+
 │   └── requirements.txt
+
 ├── consumidor_face/
+
 │   ├── app.py             
+
 │   ├── Dockerfile
+
 │   └── requirements.txt
+
 ├── consumidor_team/
+
 │   ├── app.py             
+
 │   ├── Dockerfile
+
 │   └── requirements.txt
+
 ├── docker-compose.yml    
+
 └── README.md
 
 📊 Demonstração:
