@@ -2,7 +2,7 @@ Para rodar o projeto, siga os seguintes passos:
 
 1° Para criar a estrutura do projeto, vá até o diretório onde o arquivo docker-compose.yaml está localizado, usando o terminal. Em seguida, execute o comando docker-compose up --build, que criará a estrutura do projeto.
 
-2° Após isso, aguarde até que o processo de construção seja concluído e comecem a aparecer as mensagens referentes às IAs: a azul, que representa a IA de identificação dos times, e a vermelha, que representa a IA de reconhecimento de expressão facial.
+2° Após isso, aguarde até que o processo de construção seja concluído e comecem a aparecer as mensagens referentes às IAs: a amarela, que representa a IA de identificação dos times, e a azul, que representa a IA de reconhecimento de expressão facial.
 ![Captura de tela 2025-05-05 215242](https://github.com/user-attachments/assets/d9f657f0-d0ce-45e5-b527-db838be029ed)
 
 3° Com o progama em execução, abra o navegador e bote o seguinte link: http://localhost:15672. O link abrirá o site do rabbit no qual ele pedirá uma senha e login.
