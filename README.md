@@ -1,3 +1,46 @@
+Sistema de Processamento Distribuído com RabbitMQ e IA
+📝 Descrição
+Sistema distribuído que implementa processamento assíncrono de imagens usando RabbitMQ como message broker, com simulação de análise de emoções em faces e identificação de times de futebol.
+
+🏗️ Arquitetura
+Componentes
+Gerador: Produz mensagens simuladas (5+ msgs/segundo)
+RabbitMQ: Message broker com topic exchange
+Consumidor Face: Análise de emoções (3-5s/mensagem)
+Consumidor Team: Identificação de times (4-7s/mensagem)
+
+🚀 Como Executar
+1. Clone o repositório:
+git clone <https://github.com/Raileal/Sistema-de-carga-com-IA-SD>
+cd Sistema-de-Carga-com-IA
+
+2.Execute com Docker Compose:
+docker-compose up --build
+
+3. Acesse o RabbitMQ Management:
+URL: http://localhost:15672
+Usuário: guest
+Senha: guest
+
+📁 Estrutura do Projeto
+trabalho06/
+├── gerador_mensagens/
+│   ├── app.py          # Gerador de mensagens
+│   ├── Dockerfile
+│   └── requirements.txt
+├── consumidor_face/
+│   ├── app.py          # Processamento de faces
+│   ├── Dockerfile
+│   └── requirements.txt
+├── consumidor_team/
+│   ├── app.py          # Processamento de times
+│   ├── Dockerfile
+│   └── requirements.txt
+├── docker-compose.yml  # Configuração dos containers
+└── README.md
+
+
+📊 Demonstração
 Para rodar o projeto, siga os seguintes passos:
 
 1° Para criar a estrutura do projeto, vá até o diretório onde o arquivo docker-compose.yaml está localizado, usando o terminal. Em seguida, execute o comando docker-compose up --build, que criará a estrutura do projeto.
@@ -14,3 +57,4 @@ Para esta etapa usa "guest" para autenticar no login e senha.
 Para ver a fila de processamento em crescimento aperte na opção de "Queues e Streams" e você verá a seguinte tela:
 ![image](https://github.com/user-attachments/assets/70a87819-f8f6-4acc-ac34-a96d19550aed)
 Na tela em questão será possível ver a fila acumulando na categoria ready.
+
